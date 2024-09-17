@@ -24,7 +24,7 @@ const BackgroundImage = ({ transitionData, currentSlideData }: Props) => {
         />
       )}
       <motion.img
-        key={(currentSlideData.data.img = "transition")}
+        key={currentSlideData.data.img + "transition"}
         alt="Current image"
         className="absolute left-0 top-0 h-full w-full object-cover brightness-50"
         src={currentSlideData.data.img}
